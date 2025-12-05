@@ -1,5 +1,4 @@
 from pathlib import Path
-from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -72,4 +71,4 @@ REST_FRAMEWORK = {
 
 NBU_API_URL = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json"
 CACHE_PERIOD_DAYS = 1
-HISTORY_CACHE_LIMIT = 90  # храним максимум 90 дней
+HISTORY_CACHE_LIMIT = 90

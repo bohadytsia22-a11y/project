@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-from currency.views import converter   # ← добавляем
+from currency.views import converter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', converter),                # ← теперь главная страница
+    path('', converter),
     path('', include('currency.urls')),
 ]
